@@ -1,0 +1,138 @@
+Yasmine Boussadia
+Data Engineer and AI automation
+2 ans d'expérience
+
+EXPERTISES
+•	Développement backend avec NestJS et Python (FastAPI), conception d’API REST performantes et sécurisées.
+•	 Développement frontend et mobile avec Vue.js, Tailwind CSS et React Native, de la maquette à la mise en production.
+•	Maîtrise des bases de données relationnelles et NoSQL, principalement PostgreSQL.
+•	Expérience approfondie en ingénierie des données et ETL avec Meltano, Stitch, Mage AI, Pandas et dbt incluant la modélisation et l’automatisation des pipelines de données.
+•	Compétences en visualisation de données via Superset et intégration de dashboards interactifs.
+•	Développement et intégration de solutions d’intelligence artificielle avec LangChain, Pinecone, Qdrant, Ollama, Streamlit et Gradio.
+•	Expérience en machine learning et deep learning avec Keras, TensorFlow, scikit-learn et XGBoost, conception de modèles de classification.
+•	Compétences en computer vision, utilisation de modèles tels que YOLO et création de datasets personnalisés via Roboflow.
+•	Maîtrise de Google Colab pour le développement et l’entraînement de modèles ML dans des environnements notebook collaboratifs.
+•	Connaissance des environnements cloud tels que AWS (ECS, S3, Lambda) et GCP.
+•	Bonnes connaissances en langages bas niveau (C et C++) pour le développement embarqué et les traitements optimisés.
+•	Expérience dans la conception d’architectures logicielles modernes et l’automatisation du cycle de vie applicatif (CI/CD, déploiement cloud).
+DIPLOME ET FORMATION
+•	2025 : Architecte Logiciel Développeur d’Applications, spécialité Intelligence Artificielle (Bac+5) | EPITECH, France
+•	2021 : Master en Marketing Digital | INSEEC Business School, France
+•	2018 : Master en Biotechnologie et Valorisation des plantes à intérêt pharmaceutique | Université d’Alger, Algérie
+CERTIFICATIONS
+•	2025 :  MCP Bootcamp: Build, Deploy & Secure Model Context Protocol | Udemy
+•	2025 : Machine Learning : AI, Python & R | Udemy
+
+
+COMPETENCES TECHNIQUES
+Systèmes	MacOS, Linux (Ubuntu, Debian), Windows
+Langages & Frameworks	Python, JavaScript, TypeScript, C, C++, NestJS, FastAPI, Vue.js, React Native, Tailwind CSS
+Outils & Logiciels	VS Code, Git, Docker, JIRA, Figma, Notion, Trello, Streamlit, Gradio, Roboflow, Google Colab
+Bases de données	PostgreSQL, MongoDB, Redis, Qdrant, Pinecone
+Méthodologies	Agile, Scrum, Shape Up, CI/CD, Test Driven Development (TDD)
+Devops & cloud	AWS, GCP (connaissance), Github, CI/CD, Docker
+LANGUES
+•	Anglais : bilingue
+•	Français : maternelle
+
+Expériences Professionnelles
+Depuis 01/2025	Frenchfounders – Marseille
+Data Engineer & AI automations
+Projet : Automatisation de la détection de besoins membres (Post-call pipeline)
+Automatisation de l’analyse des transcriptions d’appels entre Relationship Managers et membres afin d’extraire et d’enrichir automatiquement les besoins business identifiés dans le CRM.
+
+Réalisations :
+•	Développement d’un pipeline d’automatisation avec LangChain et Ollama pour analyser les transcriptions fournies par Leexi
+	Le modèle LLM identifie les besoins et enjeux exprimés par les membres.
+	Les résultats sont automatiquement enregistrés dans PostgreSQL, actualisant la fiche du membre et le front en temps réel.
+
+•	Implémentation d’une recherche sémantique via Qdrant retriever, permettant de rapprocher des membres ayant des besoins similaires et de proposer automatiquement des mises en relation.
+•	Suppression de la saisie manuelle et accélération du process d’analyse post-call de plus de 80 %.
+
+Environnement technique et méthodologique :
+
+Python, LangChain, Ollama, Qdrant, PostgreSQL, Meltano, Mage AI, dbt, AWS (ECS, S3), Superset, Agile/Scrum
+
+
+Projet : DORA AI – Assistant conversationnel intelligent
+
+Développement de DORA AI, un assistant IA interne (type ChatGPT) connecté au data warehouse, facilitant les recherches de profils et d’opportunités pour les Relationship Managers.
+
+Réalisations :
+
+•	Conception d’un agent LangChain intégrant deux outils :
+	Text-to-SQL Tool : interprète les requêtes naturelles et génère dynamiquement les requêtes SQL adaptées.
+	Semantic Search Tool : effectue des recherches vectorielles contextuelles via Qdrant retriever.
+
+•	Interface développée avec Gradio, connectée au Data Warehouse.
+•	Gestion du contexte conversationnel via prompts systems et intégration d’un module RAG (Retrieval-Augmented Generation).
+•	Gain considérable de temps dans la recherche de profils et amélioration des mises en relation business.
+
+Environnement technique et méthodologique :
+
+Python, LangChain, Qdrant, Gradio, Ollama, AWS ECS, dbt, Superset, Agile/Scrum
+
+
+
+Projet : Classification automatisée des entreprises et profils Pipedrive
+
+Développement d’un système intelligent d’enrichissement et de classification automatique des contacts dans le CRM Pipedrive.
+Réalisations :
+
+•	Création d’un pipeline automatisée d’enrichissement :
+	Lorsqu’un nouveau contact est ajouté dans Pipedrive, le pipeline interroge Full Enrich pour récupérer automatiquement les informations manquantes (email, entreprise, poste, etc.).
+
+•	Développement d’un algorithme de classification supervisée basé sur XGBoost, entraîné sur un jeu de données construit à partir du data warehouse interne.
+	Le modèle catégorise automatiquement les profils selon leur intitulé de poste.
+	Il classe les entreprises selon leur taille (nombre d’employés) et leur chiffre d’affaires.
+•	Amélioration de la qualité et de la richesse des données CRM, permettant une segmentation plus fine pour le business développement et les recommandations IA.
+
+Environnement technique et méthodologique :
+
+Python, XGBoost, Meltano, Mage AI, dbt, PostgreSQL, Pipedrive API, Full Enrich, AWS ECS, Superset, Agile/Scrum
+
+09/2023 – 31/2024	Frenchfounders – Marseille 
+Développeuse web et mobile
+
+Projet : Refonte et intégration du nouveau design system du Club
+
+Participation à la refonte de la plateforme web et mobile du Club FrenchFounders, premier réseau d’affaires francophone réunissant dirigeants, fondateurs et investisseurs à l’international.
+L’objectif du projet était d’optimiser l’expérience utilisateur et de moderniser l’interface tout en intégrant le nouveau design system global.
+Réalisations :
+
+•	Contribution à la refonte complète de l’application mobile (React Native) et de l’application web (Vue.js) avec intégration du nouveau design system.
+
+	Développement et intégration de nouvelles fonctionnalités : fil d’actualité, recherche avancée de membres, messagerie instantanée, notifications push et gestion d’événements.
+	Refonte de l’architecture front-end pour améliorer la performance et la maintenabilité du code.
+•	Création d’une bibliothèque de composants partagée et documentée avec Storybook, facilitant la cohérence visuelle et la collaboration entre les équipes.
+•	Écriture de tests end-to-end avec Playwright pour fiabiliser les déploiements continus et garantir la qualité fonctionnelle du produit.
+•	Collaboration étroite avec les équipes produit, backend et design pour assurer une expérience homogène sur l’ensemble des supports.
+
+Environnement technique et méthodologique :
+
+Vue.js, React Native, TypeScript, Tailwind CSS, Node.js, Firebase, Storybook, Playwright, Figma, GitLab CI/CD, Agile/Scrum
+
+
+
+
+
+
+PROJETS PERSONNELS
+2024	IGAAR
+Projet : Plateforme de gestion de risques par intelligence artificielle
+
+IGAAR (Intelligent Global AI Anomaly Recognition) est une plateforme de détection d’anomalies en temps réel à partir de flux vidéo.
+L’utilisateur peut y importer un flux ou une vidéo, sélectionner un modèle de détection parmi plusieurs disponibles (présence humaine, fumée, incendie, etc.), et recevoir une alerte automatique (email ou SMS) en cas d’anomalie détectée.
+Le projet vise à industrialiser la détection IA dans le cadre de la prévention des risques environnementaux et sécuritaires.
+
+Réalisations :
+•	Conception et développement complet de la plateforme web d’analyse vidéo basée sur des modèles de détection YOLOv8 et YOLOv11.
+	Intégration d’un système de sélection dynamique des modèles hébergés sur MinIO, automatiquement chargés selon le besoin utilisateur.
+	Développement d’un pipeline de traitement vidéo en temps réel, incluant le prétraitement, la détection et la notification.
+•	Implémentation d’un module de notification automatique (email/SMS) déclenché dès qu’une anomalie est détectée.
+•	Création d’une interface utilisateur intuitive pour gérer les flux vidéo, les modèles IA et les historiques d’alertes.
+•	Optimisation de l’inférence pour réduire la latence et permettre une détection fluide sur des flux continus.
+
+Environnement technique et méthodologique :
+
+Python, FastAPI, YOLOv8/YOLOv11, OpenCV, Streamlit, MinIO, Flask, PostgreSQL, Docker, AWS S3, Twilio API, Agile/Scrum
