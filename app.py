@@ -10,7 +10,6 @@ from langchain.embeddings.base import Embeddings
 import base64
 
 # === Charger les variables d'environnement ===
-load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 st.set_page_config(page_title="Yasmine AI", page_icon="💬", layout="centered")
