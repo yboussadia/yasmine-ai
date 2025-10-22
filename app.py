@@ -3,7 +3,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import HumanMessage, SystemMessage
-import openai
+from openai import OpenAI
 import os
 from dotenv import load_dotenv
 from langchain.embeddings.base import Embeddings
@@ -11,14 +11,13 @@ import base64
 
 # === Charger les variables d'environnement ===
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 st.set_page_config(page_title="Yasmine AI", page_icon="💬", layout="centered")
 
 # === Sidebar avec photo centrée + mini bio ===
 with st.sidebar:
-    # Lire l'image et l'encoder en base64
-    img_path = "data/yasmine_photo.jpg"  # chemin de ta photo
+    img_path = "data/yasmine_photo.jpg"
     with open(img_path, "rb") as f:
         img_b64 = base64.b64encode(f.read()).decode()
 
@@ -53,7 +52,7 @@ with st.sidebar:
     st.markdown("### 👋 Salut, je suis Yasmine AI")
     st.markdown(
         """
-        Je suis la version IA de **Yasmine Boussadia** 
+        Je suis la version IA de **Yasmine Boussadia**  
         développeuse full stack, data engineer et passionnée d’IA 🤖.  
         Pose-moi n’importe quelle question sur mes projets, mon parcours ou mes compétences !
         """
@@ -66,13 +65,13 @@ with st.sidebar:
 # === Titre principal ===
 st.title("💬 Yasmine AI — ta mini-moi intelligente")
 
-# === Classe d'embeddings custom (compatible openai==0.28) ===
+# === Nouvelle fonction d’embedding (API v1) ===
 def embed_text(text):
-    response = openai.Embedding.create(
+    response = client.embeddings.create(
         model="text-embedding-3-small",
         input=text
     )
-    return response["data"][0]["embedding"]
+    return response.data[0].embedding
 
 class MyOpenAIEmbeddings(Embeddings):
     def embed_documents(self, texts):
@@ -91,7 +90,11 @@ def load_faiss():
 
 # === Charger le modèle LLM ===
 def load_llm():
-    return ChatOpenAI(model="gpt-4o-mini", temperature=0.8, api_key=openai.api_key)
+    return ChatOpenAI(
+        model="gpt-4o-mini",
+        temperature=0.8,
+        api_key=os.getenv("OPENAI_API_KEY")
+    )
 
 # === Identité de Yasmine AI ===
 YASMINE_IDENTITY = """
