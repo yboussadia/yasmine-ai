@@ -10,7 +10,13 @@ from langchain.embeddings.base import Embeddings
 import base64
 
 # === Charger les variables d'environnement ===
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+api_key = os.getenv("OPENAI_API_KEY")
+
+if not api_key:
+    st.error("🚨 Erreur : la clé OPENAI_API_KEY est introuvable. Configure-la dans Streamlit Cloud > Settings > Secrets.")
+    st.stop()
+
+client = OpenAI(api_key=api_key)
 
 st.set_page_config(page_title="Yasmine AI", page_icon="💬", layout="centered")
 
